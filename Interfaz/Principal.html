@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SisDocMan</title>
+
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+    
+    <div class="sisdocman">
+        <h1>SisDocMan</h1>
+    </div>
+
+    <div class="li-menu"> 
+        
+        <li><a href="#tab1"><i class="fas fa-file-upload"> <span class="li-tex"> Registro </span></i></a></li>
+        <li><a href="#tab2"><i class="fas fa-chalkboard-teacher"> <span class="li-tex"> Empleado </span></i></a></li>
+        <li><a href="#tab3"><i class="fas fa-phone-square-alt"> <span class="li-tex"> Contactenos </span></i></a></li>
+        <li><a href="#tab4"><i class="far fa-question-circle"> <span class="li-tex"> Ayuda </span></i></a></li>
+        
+    </div>
+
+    <div class="content">
+
+        <div class="tabs" id="tab1">
+            <h2>Registro</h2> <br>
+            <p>Esta sección del portal es para uso de personas naturales que requieren radicar información de interes de la empresa o cosnultar el estado en que se encuentra el tramite que la compañia ha determinado requiere para atender las misma.</p> <br>
+           
+            <article class="tab1_regi_new">
+                <a href="#" class="tab1_regi_botton_new"> <i class="fas fa-plus-square"> Nuevo Registro </i></a> <br>
+                <p> Esta opción le permite radicar o colocar en conocimiento de la empresa su información o presentar una solicitud</p> <br>                
+            </article>
+    
+            <article class="tab1_regi_cons"> 
+                <a href="#" class="tab1_regi_botton_cons"><i class="fas fa-list-alt"> Consultar Registro </i></a> <br>
+                Esta opción le permite Consultar el estado en que se encuentra la información que fue radicada por usted o conocer la respuesta que se ha dado a sus solicitudes
+            </article>      
+        </div> 
+      
+        <div class="tabs" id="tab2">
+            <h2>Empleado</h2><br>
+            <p>Esta sección es de uso corporativo. Los empleados activos en la empresa podran contar con su perfil, el cual les permitira consultar, editar o actualizar la información que se recibe, registra y crea por parte de la compañia</p> <br>
+
+            <div class="tab2_login_secc">
+
+                <div class="tab2_login_secc_regis">
+                    <h3>Registrarse</h3> <br>
+                    <form action="">
+                        <input type="text" placeholder="Nombres" class="Nombres">
+                        <input type="text" placeholder="Apellidos" class="Apellidos">
+                        <input type="text" placeholder="Nombre de Usuario" class="Nombre de Usuario">
+                        <input type="email" placeholder="Correo" class="Correo">
+                        <input type="email" placeholder="Confirmar Correo" class="Confir_Correo">
+                        <input type="password" placeholder="Contraseña" class="pass">
+                        <input type="password" placeholder="Confirmar Contraseña" class="repass">
+                        <input type="submit" class="submit_registro" value="REGISTRARSE">
+                    </form>
+                </div>
+
+                <div class="tab2_login_secc_login">
+                    <h3>Iniciar Sección</h3> <br>
+                    <div class="tab_login_secc_login_items">
+                        <button class="correo"><i class="fas fa-at"></i><span class="tex-login-secc-login">Acceder con Correo Electronico</span></button>
+                        <button class="user_regis"><i class="fas fa-user-shield"></i> <span class="tex-login-secc-login">Acceder con Usuario Registrado</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+        <div class="tabs" id="tab3">
+            <h2>Contactenos</h2><br>
+            <p>Si usted requiere una información en parrticular que no puede ser resuelta en la Sección de AYUDA o requiere que la empresa establezca contacto con usted, puede dejarnos sus mensajes en el siguientes formulario</p> <br>
+            
+            <div class="tab3_contact">
+                <form action="" class="tab3_contact_form">
+                    <label for="" class="tab3_contact_form_label">Nombres</label><br>
+                    <input type="text" class="tab3_contact_form_input"><br>
+                    <label for="" class="tab3_contact_form_label">Apellidos</label><br>
+                    <input type="text" class="tab3_contact_form_input"><br>
+                    <label for="" class="tab3_contact_form_label">Correo Electronico</label><br>
+                    <input type="email" class="tab3_contact_form_input"><br>
+                    <label for="" class="tab3_contact_form_label">Numero telefonico 1</label><br>
+                    <input type="text" class="tab3_contact_form_input"><br>
+                    <label for="" class="tab3_contact_form_label">Numero telefonico 2 (Opcional)</label> <br>
+                    <input type="text" class="tab3_contact_form_input"><br>
+                    <label for="" class="tab3_contact_form_label">Asunto</label><br>
+                    <input type="text" class="tab3_contact_form_input"><br>
+                    <label for="" class="tab3_contact_form_label">Mensaje</label><br>
+                    <input type="text" class="tab3_contact_form_input_mensaje"><br>
+                    <input type="submit" class="submit_enviar" value="ENVIAR"><br>
+                </form>
+            </div>
+        </div>
+
+        <div class="tabs" id="tab4">
+            <h2>Ayuda</h2><br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est voluptas porro at nesciunt similique impedit, repellendus natus quia beatae, ullam soluta distinctio laboriosam error adipisci aperiam cum tempora culpa architecto. Eum animi deserunt sit magni facere voluptatibus veritatis? Odio, ipsa?</p> <br>
+
+            <div class="tab4_help">
+                <h3>Preguntas frecuentes</h3> <br>
+                <article class="tab4_help_acceder_usuario">
+                <h4>Como acceder al sistema de información</h4> <br>
+                <P>Para acceder al sistema de información usted debe ser un empleado activo dentro de la compañia</P><br>
+                <p>Puede utilizar el sistema como una persona externa para presentar ante la empresa peticiones, documentos o información de interes en la pestaña "REGISTRO" enlaces "Nuevo Registro" o "Consultar Registro"</p>
+                </article><br>
+
+                <article class="tab4_help_fail_software">
+                    <h4>Que hacer cuando falla el Sistema de Información</h4> <br>
+                    <p>Borre el caché de navegación con los comandos Ctrl + Shift + Delete </p> <br>
+                    <p>Actualice el navegador con la tecla F5</p>
+                </article>
+            </div>
+        </div>
+              
+    </div> <br>
+
+     <div class="pie">
+        <footer>
+        <p>Todos los derechos reservados</p><br>
+        <p>2021</p><br>
+        </footer>
+     </div>
+        
+</div>
+
+
+</body>
+
+</html>
